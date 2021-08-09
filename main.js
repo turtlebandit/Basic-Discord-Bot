@@ -127,10 +127,10 @@ client.on("message", message =>{
     }
   }
   else if (command === "play" || command === "p") {
-    client.commands.get("play").execute(message, args, Discord);
+    client.commands.get("play").execute(message, args);
   }
   else if (command === "die" || command === "leave") {
-    client.commands.get("die").execute(message, args, Discord);
+    client.commands.get("die").execute(message, args);
   }
 });
 // Login to bot
