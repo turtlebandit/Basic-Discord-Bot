@@ -126,6 +126,12 @@ client.on("message", message =>{
       client.commands.get("reactionrole").execute(message, args, Discord, client);
     }
   }
+  else if (command === "play" || command === "p") {
+    client.commands.get("play").execute(message, args, Discord);
+  }
+  else if (command === "die" || command === "leave") {
+    client.commands.get("die").execute(message, args, Discord);
+  }
 });
 // Login to bot
 client.login(config.token);
